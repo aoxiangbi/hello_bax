@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experience - Bax Portfolio</title>
+    <meta name="description" content="Professional experience" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-logo">Bax</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="experience.html" class="nav-link active" data-en="Experience" data-zh="经历">Experience</a></li>
+                <li><a href="projects.html" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+        </div>
+    </nav>
+
+    <div class="layout-container">
+        <!-- Left sidebar with profile -->
+        <aside class="profile-sidebar">
+            <div class="profile-content">
+                <div class="profile-avatar">
+                    <img src="assets/1.JPG" alt="Aoxiang Bi" />
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
+                    <p class="profile-title" data-en="Electrical and Computer Engineer" data-zh="电气与计算机工程师">Electrical and Computer Engineer</p>
+                    <p class="profile-bio" data-en="Motion Sensor & Data Engineer | McGill Computer Engineering" data-zh="运动传感器&数据工程师 | 麦吉尔大学计算机工程">Motion Sensor & Data Engineer | McGill Computer Engineering</p>
+                    <div class="profile-tags">
+                    </div>
+                </div>
+                </aside>
+
+        <!-- Main content area -->
+        <main class="main-content">
+        <section id="experience" class="content-section">
+            <h2 data-en="Professional Experience" data-zh="专业经历">Professional Experience</h2>
+            <div class="section-content">
+                <article class="experience-item">
+                    <h3 data-en="Motion Sensor Development" data-zh="运动传感器开发">Motion Sensor Development</h3>
+                    <p class="meta">2024 — Present</p>
+                    <p data-en="Currently focusing on IMU signal processing and real-world data validation in athletic environments." data-zh="目前专注于IMU信号处理和运动环境中的实际数据验证。">Currently focusing on IMU signal processing and real-world data validation in athletic environments.</p>
+                </article>
+                <article class="experience-item">
+                    <h3 data-en="Digital Design & FPGA Development" data-zh="数字设计与FPGA开发">Digital Design & FPGA Development</h3>
+                    <p class="meta">2023 — 2024</p>
+                    <p data-en="Implemented interactive video games on FPGA using Verilog, with behavioral simulation and hardware debugging." data-zh="使用Verilog在FPGA上实现了交互式视频游戏，进行行为仿真和硬件调试。">Implemented interactive video games on FPGA using Verilog, with behavioral simulation and hardware debugging.</p>
+                </article>
+                <article class="experience-item">
+                    <h3 data-en="Analog & PCB Design" data-zh="模拟与PCB设计">Analog & PCB Design</h3>
+                    <p class="meta">2022 — 2024</p>
+                    <p data-en="Designed and hand-soldered multiple PCBs including RF receivers, medical stimulators, and autonomous vehicle motherboards." data-zh="设计并手工焊接多个PCB，包括RF接收器、医疗刺激器和自动驾驶车辆主板。">Designed and hand-soldered multiple PCBs including RF receivers, medical stimulators, and autonomous vehicle motherboards.</p>
+                </article>
+            </div>
+        </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p data-en="© <span id=&quot;year&quot;></span> Bax. Built with curiosity." data-zh="© <span id=&quot;year&quot;></span> Bax. 用好奇心打造。">© <span id="year"></span> Bax. Built with curiosity.</p>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

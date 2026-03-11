@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bax Portfolio</title>
+    <meta name="description" content="Minimal personal portfolio for Bax" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-logo">Bax</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="experience.html" class="nav-link" data-en="Experience" data-zh="经历">Experience</a></li>
+                <li><a href="projects.html" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+        </div>
+    </nav>
+
+    <div class="layout-container">
+        <!-- Left sidebar with profile -->
+        <aside class="profile-sidebar">
+            <div class="profile-content">
+                <div class="profile-avatar">
+                    <img src="assets/1.JPG" alt="Aoxiang Bi" />
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
+                    <p class="profile-title" data-en="Electrical and Computer Engineer" data-zh="电气与计算机工程师">Electrical and Computer Engineer</p>
+                    <p class="profile-bio" data-en="Motion Sensor & Data Engineer | McGill Computer Engineering" data-zh="运动传感器&数据工程师 | 麦吉尔大学计算机工程">Motion Sensor & Data Engineer | McGill Computer Engineering</p>
+                    <div class="profile-tags">
+                    </div>
+                </div>
+                </aside>
+
+        <!-- Main content area -->
+        <main class="main-content">
+        <section id="about" class="content-section">
+            <h2 data-en="About Me" data-zh="关于我">About Me</h2>
+            <div class="section-content">
+                <p data-en="Hi there! I'm a third-year student at McGill University studying Computer Engineering with a strong passion for motion sensing and data engineering." data-zh="你好！我是麦吉尔大学计算机工程专业的三年级学生，对运动传感和数据工程充满热情。">Hi there! I'm a third-year student at McGill University studying Computer Engineering with a strong passion for motion sensing and data engineering.</p>
+                <p data-en="I'm fascinated by how data from sensors can reveal the true mechanics of human movement. Whether it's analyzing a sprint, tracking a jump, or measuring ground impact forces, I believe there's profound engineering potential in understanding sports through precision measurement." data-zh="我对传感器数据如何揭示人类运动的真实机制着迷。无论是分析冲刺、追踪跳跃还是测量地面冲击力，我相信通过精密测量来理解运动有着深远的工程潜力。">I'm fascinated by how data from sensors can reveal the true mechanics of human movement. Whether it's analyzing a sprint, tracking a jump, or measuring ground impact forces, I believe there's profound engineering potential in understanding sports through precision measurement.</p>
+            </div>
+        </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p data-en="© <span id=\"year\"></span> Bax. Built with curiosity." data-zh="© <span id=\"year\"></span> Bax. 用好奇心打造。">© <span id="year"></span> Bax. Built with curiosity.</p>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
