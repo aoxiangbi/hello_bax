@@ -1,17 +1,17 @@
 :root {
     color-scheme: dark;
-    --page-bg: #0a0a0a;
-    --sidebar-bg: #1a1a1a;
-    --content-bg: #0f0f0f;
-    --card-bg: #161616;
-    --surface: #1d1d1d;
-    --text-primary: #f5f5f5;
-    --text-secondary: #b3b3b3;
-    --text-muted: #888888;
+    --page-bg: #111111;
+    --sidebar-bg: #111111;
+    --content-bg: #111111;
+    --card-bg: #1a1a1a;
+    --surface: #1a1a1a;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --text-muted: #666666;
     --accent: #0a84ff;
     --accent-hover: #0071e3;
     --border: rgba(255, 255, 255, 0.08);
-    --border-light: rgba(255, 255, 255, 0.04);
+    --border-light: rgba(255, 255, 255, 0.05);
     --radius-lg: 12px;
     --radius-md: 8px;
     --radius-sm: 6px;
@@ -138,40 +138,45 @@ a {
 /* Layout */
 .layout-container {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 2rem;
+    grid-template-columns: 260px 1fr;
+    gap: 0;
     min-height: 100vh;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    padding-top: calc(60px + 2rem);
+    padding: 0;
 }
 
 /* Sidebar */
 .profile-sidebar {
     position: sticky;
-    top: calc(60px + 2rem);
-    height: fit-content;
-    border-radius: var(--radius-lg);
-    background: transparent;
-    padding: 0;
-    border: none;
+    top: 0;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
 }
 
 .profile-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
+    align-items: center;
+    width: 100%;
 }
 
 .profile-avatar {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: var(--radius-lg);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     overflow: hidden;
     background: var(--surface);
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
+    flex-shrink: 0;
 }
 
 .profile-avatar img {
@@ -183,14 +188,14 @@ a {
 .profile-info {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.4rem;
 }
 
 .profile-name {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .profile-title {
@@ -265,15 +270,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0;
+    padding: 2.5rem 3.5rem;
+    min-height: 100vh;
 }
 
 .content-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
     border-bottom: 1px solid var(--border-light);
-}
-
-.content-section:first-child {
-    padding-top: 0;
 }
 
 .content-section:last-child {
@@ -282,16 +285,16 @@ a {
 }
 
 .content-section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.25rem 0;
     color: var(--text-primary);
 }
 
 .section-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 .experience-item,
@@ -333,62 +336,127 @@ a {
     line-height: 1.6;
 }
 
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    align-items: baseline;
+}
+
+.skill-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.skill-value {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .skill-row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+}
+
+/* Content Tabs */
+.content-tabs {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.tab-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 1px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tab-link:hover {
+    color: var(--text-primary);
+}
+
+.tab-link.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+}
+
+/* Project Entries */
+.project-entry p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+}
+
+.project-label {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 /* Footer */
 .footer {
-    margin-top: 4rem;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
+    display: none;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
     .layout-container {
-        grid-template-columns: 280px 1fr;
-        gap: 1.5rem;
-        padding: 1.5rem;
-        padding-top: calc(60px + 1.5rem);
+        grid-template-columns: 230px 1fr;
     }
-    
-    .nav-links {
-        gap: 2rem;
-    }
-    
-    .nav-link {
-        font-size: 0.9rem;
+
+    .main-content {
+        padding: 2rem 2.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 0 1rem;
-    }
-    
-    .nav-logo {
-        font-size: 1rem;
-    }
-    
-    .nav-links {
-        gap: 1.5rem;
-    }
-    
-    .nav-link {
-        font-size: 0.85rem;
-    }
-    
     .layout-container {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1rem;
-        padding-top: calc(60px + 1rem);
     }
-    
+
     .profile-sidebar {
         position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 2.5rem 1.5rem;
     }
-    
+
+    .profile-avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    .main-content {
+        padding: 2rem 1.5rem;
+    }
+
     .content-section h2 {
         font-size: 1.5rem;
     }

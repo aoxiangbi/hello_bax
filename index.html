@@ -11,19 +11,6 @@
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">Bax</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link active" data-en="About" data-zh="关于">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-zh="经历">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
-            </ul>
-            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
-        </div>
-    </nav>
-
     <div class="layout-container">
         <!-- Left sidebar with profile -->
         <aside class="profile-sidebar">
@@ -33,29 +20,70 @@
                 </div>
                 <div class="profile-info">
                     <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
-                    <p class="profile-title" data-en="Electrical and Computer Engineer" data-zh="电气与计算机工程师">Electrical and Computer Engineer</p>
-                    <p class="profile-bio" data-en="Motion Sensor & Data Engineer | McGill Computer Engineering" data-zh="运动传感器&数据工程师 | 麦吉尔大学计算机工程">Motion Sensor & Data Engineer | McGill Computer Engineering</p>
-                    <div class="profile-tags">
-                    </div>
+                    <p class="profile-bio" data-en="3rd year Electrical &amp; Computer Engineering Student @ McGill University | Seeking Hardware Internship" data-zh="麦吉尔大学电子与计算机工程专业三年级 | 寻求硬件实习机会">3rd year Electrical &amp; Computer Engineering Student @ McGill University | Seeking Hardware Internship</p>
                 </div>
-                </aside>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+            </div>
+        </aside>
 
         <!-- Main content area -->
         <main class="main-content">
+
+            <nav class="content-tabs">
+                <a href="index.html" class="tab-link active" data-en="About Me" data-zh="关于我">About Me</a>
+                <a href="experience.html" class="tab-link" data-en="Experience" data-zh="经历">Experience</a>
+                <a href="projects.html" class="tab-link" data-en="Projects" data-zh="项目">Projects</a>
+            </nav>
+
         <section id="about" class="content-section">
             <h2 data-en="About Me" data-zh="关于我">About Me</h2>
             <div class="section-content">
-                <p data-en="Hi there! I'm a third-year student at McGill University studying Computer Engineering with a strong passion for motion sensing and data engineering." data-zh="你好！我是麦吉尔大学计算机工程专业的三年级学生，对运动传感和数据工程充满热情。">Hi there! I'm a third-year student at McGill University studying Computer Engineering with a strong passion for motion sensing and data engineering.</p>
-                <p data-en="I'm fascinated by how data from sensors can reveal the true mechanics of human movement. Whether it's analyzing a sprint, tracking a jump, or measuring ground impact forces, I believe there's profound engineering potential in understanding sports through precision measurement." data-zh="我对传感器数据如何揭示人类运动的真实机制着迷。无论是分析冲刺、追踪跳跃还是测量地面冲击力，我相信通过精密测量来理解运动有着深远的工程潜力。">I'm fascinated by how data from sensors can reveal the true mechanics of human movement. Whether it's analyzing a sprint, tracking a jump, or measuring ground impact forces, I believe there's profound engineering potential in understanding sports through precision measurement.</p>
+                <p data-en="I'm a third-year Electrical &amp; Computer Engineering student at McGill University with a passion for hardware — from reading schematics and debugging circuits to writing embedded firmware and validating systems in the lab. I enjoy working at the intersection of the physical and digital, and I'm always looking for opportunities to apply what I've learned to real engineering problems." data-zh="我是麦吉尔大学电子与计算机工程专业三年级学生，对硬件充满热情——从读懂原理图、调试电路，到编写嵌入式固件和在实验室中验证系统。我享受在物理与数字世界交汇处工作，始终寻找将所学应用于真实工程问题的机会。我正积极寻找硬件方向的实习机会，尤其关注测试与验证相关岗位。">I'm a third-year Electrical &amp; Computer Engineering student at McGill University with a passion for hardware — from reading schematics and debugging circuits to writing embedded firmware and validating systems in the lab. I enjoy working at the intersection of the physical and digital, and I'm always looking for opportunities to apply what I've learned to real engineering problems. I'm actively seeking hardware internship opportunities, with a particular interest in test and validation roles.</p>
+            </div>
+        </section>
+
+        <section id="project-experience" class="content-section">
+            <h2 data-en="Project Experience" data-zh="项目经历">Project Experience</h2>
+            <div class="section-content">
+                <div class="project-entry">
+                    <p><strong class="project-label" data-en="[Project Title]:" data-zh="[项目标题]:">[Project Title]:</strong> <span data-en="Details coming soon." data-zh="详情即将补充。">Details coming soon.</span></p>
+                </div>
+                <div class="project-entry">
+                    <p><strong class="project-label" data-en="[Project Title]:" data-zh="[项目标题]:">[Project Title]:</strong> <span data-en="Details coming soon." data-zh="详情即将补充。">Details coming soon.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2 data-en="Technical Skills" data-zh="技术技能">Technical Skills</h2>
+            <div class="section-content">
+                <div class="skills-list">
+                    <div class="skill-row">
+                        <span class="skill-label" data-en="Languages" data-zh="编程语言">Languages</span>
+                        <span class="skill-value">C/C++, Python, MATLAB</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label" data-en="HDL" data-zh="硬件描述语言">HDL</span>
+                        <span class="skill-value">Verilog, VHDL</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label" data-en="EDA &amp; Simulation" data-zh="EDA与仿真">EDA &amp; Simulation</span>
+                        <span class="skill-value">Altium Designer, Quartus, ModelSim, LTspice, Simulink</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label" data-en="Hardware &amp; Lab" data-zh="硬件与实验室">Hardware &amp; Lab</span>
+                        <span class="skill-value">FPGA, Microcontrollers (STM32, ESP32), Oscilloscope, Logic Analyzer, Signal Generator, PCB Design &amp; Soldering</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label" data-en="Coursework" data-zh="相关课程">Coursework</span>
+                        <span class="skill-value">Digital Systems, Analog Electronics, Circuit Analysis, Embedded Systems, Signals &amp; Systems, Computer Architecture, VLSI, Algorithms</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         </main>
     </div>
-
-    <footer class="footer">
-        <p data-en="© <span id=\"year\"></span> Bax. Built with curiosity." data-zh="© <span id=\"year\"></span> Bax. 用好奇心打造。">© <span id="year"></span> Bax. Built with curiosity.</p>
-    </footer>
 
     <script src="scripts/main.js" defer></script>
 </body>
