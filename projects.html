@@ -11,64 +11,67 @@
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">Bax</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link" data-en="About" data-zh="关于">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-zh="经历">Experience</a></li>
-                <li><a href="projects.html" class="nav-link active" data-en="Projects" data-zh="项目">Projects</a></li>
-            </ul>
-            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
-        </div>
-    </nav>
-
     <div class="layout-container">
         <!-- Left sidebar with profile -->
         <aside class="profile-sidebar">
             <div class="profile-content">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">English</button>
                 <div class="profile-avatar">
                     <img src="assets/1.JPG" alt="Aoxiang Bi" />
                 </div>
                 <div class="profile-info">
                     <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
-                    <p class="profile-title" data-en="Electrical and Computer Engineer" data-zh="电气与计算机工程师">Electrical and Computer Engineer</p>
-                    <p class="profile-bio" data-en="Motion Sensor & Data Engineer | McGill Computer Engineering" data-zh="运动传感器&数据工程师 | 麦吉尔大学计算机工程">Motion Sensor & Data Engineer | McGill Computer Engineering</p>
-                    <div class="profile-tags">
-                    </div>
+                    <p class="profile-bio" data-en="3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab" data-zh="麦吉尔大学电子与计算机工程专业三年级 | 麦吉尔运动实验室可穿戴设备实习生">3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab</p>
                 </div>
-                </aside>
+            </div>
+        </aside>
 
         <!-- Main content area -->
         <main class="main-content">
-        <section id="projects" class="content-section">
-            <h2 data-en="My Projects" data-zh="我的项目">My Projects</h2>
-            <div class="section-content">
-                <article class="project-item">
-                    <h3 data-en="Running Gait Analysis System" data-zh="跑步步态分析系统">Running Gait Analysis System</h3>
-                    <p class="meta">IMU Processing · 2024</p>
-                    <p data-en="Real-time motion capture and analysis for running mechanics using accelerometer and gyroscope data." data-zh="使用加速度计和陀螺仪数据对跑步力学进行实时运动捕捉和分析。">Real-time motion capture and analysis for running mechanics using accelerometer and gyroscope data.</p>
-                </article>
-                <article class="project-item">
-                    <h3 data-en="FPGA Video Game" data-zh="FPGA视频游戏">FPGA Video Game</h3>
-                    <p class="meta">Digital Design · 2023</p>
-                    <p data-en="Fully interactive game implementation on FPGA with rendering pipeline and collision detection." data-zh="在FPGA上实现的完全交互式游戏，包含渲染管道和碰撞检测。">Fully interactive game implementation on FPGA with rendering pipeline and collision detection.</p>
-                </article>
-                <article class="project-item">
-                    <h3 data-en="Custom PCB Suite" data-zh="定制PCB套件">Custom PCB Suite</h3>
-                    <p class="meta">Electronics · 2022–2024</p>
-                    <p data-en="RF front-end receiver, biomedical stimulation circuits, and vehicle control boards." data-zh="RF前端接收器、生物医学刺激电路和车辆控制板。">RF front-end receiver, biomedical stimulation circuits, and vehicle control boards.</p>
-                </article>
-            </div>
-        </section>
+
+            <nav class="content-tabs">
+                <a href="index.html" class="tab-link" data-en="About Me" data-zh="关于我">About Me</a>
+                <a href="experience.html" class="tab-link" data-en="Experience" data-zh="经历">Experience</a>
+                <a href="projects.html" class="tab-link active" data-en="Projects" data-zh="项目">Projects</a>
+            </nav>
+
+            <section id="projects" class="content-section">
+                <h2 data-en="My Projects" data-zh="我的项目">My Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- JumPro -->
+                    <article class="project-card">
+                        <div class="project-card-img">
+                            <img src="assets/JumPro.png" alt="JumPro" />
+                        </div>
+                        <div class="project-card-body">
+                            <h3 data-en="JumPro — IMU Vertical Jump Analyser" data-zh="JumPro — 基于 IMU 的垂直跳跃分析系统">JumPro — IMU Vertical Jump Analyser</h3>
+                            <p data-en="A Python-based system using wearable IMU sensors to measure vertical jump height, flight time, and landing impact in real time via signal processing and Kalman filtering." data-zh="基于 Python 的可穿戴 IMU 系统，通过信号处理与卡尔曼滤波实时测量垂直跳跃高度、腾空时间与落地冲击力。">A Python-based system using wearable IMU sensors to measure vertical jump height, flight time, and landing impact in real time via signal processing and Kalman filtering.</p>
+                        </div>
+                    </article>
+
+                    <!-- kins_site -->
+                    <article class="project-card">
+                        <div class="project-card-img">
+                            <img src="assets/Site.png" alt="kins_site" />
+                        </div>
+                        <div class="project-card-body">
+                            <h3 data-en="Sports Health &amp; Performance Web Platform" data-zh="运动健康与表现 Web 平台">Sports Health &amp; Performance Web Platform</h3>
+                            <p data-en="A full-stack web platform focused on sports health and athletic performance tracking, built with modern web technologies and deployed on GitHub." data-zh="一个专注于运动健康与竞技表现追踪的全栈 Web 平台，采用现代前端技术构建并部署于 GitHub。">A full-stack web platform focused on sports health and athletic performance tracking, built with modern web technologies and deployed on GitHub.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
 
         </main>
     </div>
 
-    <footer class="footer">
-        <p data-en="© <span id=&quot;year&quot;></span> Bax. Built with curiosity." data-zh="© <span id=&quot;year&quot;></span> Bax. 用好奇心打造。">© <span id="year"></span> Bax. Built with curiosity.</p>
-    </footer>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    </div>
 
     <script src="scripts/main.js" defer></script>
 </body>

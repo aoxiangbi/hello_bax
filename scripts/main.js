@@ -16,15 +16,15 @@ const switchLanguage = (lang) => {
     
     elements.forEach((el) => {
         if (lang === 'en') {
-            el.textContent = el.dataset.en;
+            el.innerHTML = el.dataset.en;
         } else {
-            el.textContent = el.dataset.zh;
+            el.innerHTML = el.dataset.zh;
         }
     });
     
     // Update button text
     if (langToggle) {
-        langToggle.textContent = lang === 'en' ? 'EN' : '中';
+        langToggle.textContent = lang === 'en' ? 'English' : '中文';
     }
     
     // Save preference
@@ -43,5 +43,22 @@ if (langToggle) {
 setYear();
 switchLanguage(savedLang);
 
+// Lightbox
+function openLightbox(item) {
+    const img = item.querySelector('img');
+    if (!img) return;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+}
 
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('open');
+}
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});

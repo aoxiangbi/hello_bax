@@ -11,64 +11,69 @@
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">Bax</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link" data-en="About" data-zh="关于">About</a></li>
-                <li><a href="experience.html" class="nav-link active" data-en="Experience" data-zh="经历">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
-            </ul>
-            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
-        </div>
-    </nav>
-
     <div class="layout-container">
         <!-- Left sidebar with profile -->
         <aside class="profile-sidebar">
             <div class="profile-content">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">English</button>
                 <div class="profile-avatar">
                     <img src="assets/1.JPG" alt="Aoxiang Bi" />
                 </div>
                 <div class="profile-info">
                     <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
-                    <p class="profile-title" data-en="Electrical and Computer Engineer" data-zh="电气与计算机工程师">Electrical and Computer Engineer</p>
-                    <p class="profile-bio" data-en="Motion Sensor & Data Engineer | McGill Computer Engineering" data-zh="运动传感器&数据工程师 | 麦吉尔大学计算机工程">Motion Sensor & Data Engineer | McGill Computer Engineering</p>
-                    <div class="profile-tags">
-                    </div>
+                    <p class="profile-bio" data-en="3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab" data-zh="麦吉尔大学电子与计算机工程专业三年级 | 麦吉尔运动实验室可穿戴设备实习生">3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab</p>
                 </div>
-                </aside>
+            </div>
+        </aside>
 
         <!-- Main content area -->
         <main class="main-content">
-        <section id="experience" class="content-section">
-            <h2 data-en="Professional Experience" data-zh="专业经历">Professional Experience</h2>
-            <div class="section-content">
-                <article class="experience-item">
-                    <h3 data-en="Motion Sensor Development" data-zh="运动传感器开发">Motion Sensor Development</h3>
-                    <p class="meta">2024 — Present</p>
-                    <p data-en="Currently focusing on IMU signal processing and real-world data validation in athletic environments." data-zh="目前专注于IMU信号处理和运动环境中的实际数据验证。">Currently focusing on IMU signal processing and real-world data validation in athletic environments.</p>
-                </article>
-                <article class="experience-item">
-                    <h3 data-en="Digital Design & FPGA Development" data-zh="数字设计与FPGA开发">Digital Design & FPGA Development</h3>
-                    <p class="meta">2023 — 2024</p>
-                    <p data-en="Implemented interactive video games on FPGA using Verilog, with behavioral simulation and hardware debugging." data-zh="使用Verilog在FPGA上实现了交互式视频游戏，进行行为仿真和硬件调试。">Implemented interactive video games on FPGA using Verilog, with behavioral simulation and hardware debugging.</p>
-                </article>
-                <article class="experience-item">
-                    <h3 data-en="Analog & PCB Design" data-zh="模拟与PCB设计">Analog & PCB Design</h3>
-                    <p class="meta">2022 — 2024</p>
-                    <p data-en="Designed and hand-soldered multiple PCBs including RF receivers, medical stimulators, and autonomous vehicle motherboards." data-zh="设计并手工焊接多个PCB，包括RF接收器、医疗刺激器和自动驾驶车辆主板。">Designed and hand-soldered multiple PCBs including RF receivers, medical stimulators, and autonomous vehicle motherboards.</p>
-                </article>
+
+            <nav class="content-tabs">
+                <a href="index.html" class="tab-link" data-en="About Me" data-zh="关于我">About Me</a>
+                <a href="experience.html" class="tab-link active" data-en="Experience" data-zh="经历">Experience</a>
+                <a href="projects.html" class="tab-link" data-en="Projects" data-zh="项目">Projects</a>
+            </nav>
+
+            <section id="experience" class="content-section">
+                <h2 data-en="Professional Experience" data-zh="专业经历">Professional Experience</h2>
+                <div class="section-content">
+
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 data-en="Wearable Device Engineer" data-zh="可穿戴设备工程师">Wearable Device Engineer</h3>
+                                <p class="experience-org" data-en="McGill Motion Technology &amp; Innovation (MOTION) Lab" data-zh="麦吉尔运动技术与创新（MOTION）实验室">McGill Motion Technology &amp; Innovation (MOTION) Lab</p>
+                            </div>
+                            <p class="meta" data-en="Dec 2025 – Present" data-zh="2025 年 12 月 – 至今">Dec 2025 – Present</p>
+                        </div>
+                        <ul class="experience-bullets">
+                            <li data-en="Built a &lt;strong&gt;3D lower-limb gait kinematics pipeline&lt;/strong&gt; for wearable &lt;strong&gt;IMU&lt;/strong&gt; systems, computing hip, knee, ankle, and pelvis joint angles from raw sensor data." data-zh="为可穿戴 &lt;strong&gt;IMU&lt;/strong&gt; 系统构建&lt;strong&gt;三维下肢步态运动学管线&lt;/strong&gt;，计算髋、膝、踝及骨盆关节角度。">Built a <strong>3D lower-limb gait kinematics pipeline</strong> for wearable <strong>IMU</strong> systems, computing hip, knee, ankle, and pelvis joint angles from raw sensor data.</li>
+                            <li data-en="Developed a &lt;strong&gt;Python&lt;/strong&gt; signal processing pipeline using &lt;strong&gt;Kalman filtering&lt;/strong&gt; to extract cadence and foot progression angle from raw accelerometer and gyroscope data." data-zh="利用 &lt;strong&gt;Python&lt;/strong&gt; 构建基于&lt;strong&gt;卡尔曼滤波&lt;/strong&gt;的信号处理管线，从原始加速度计与陀螺仪数据中提取步频与足偏角。">Developed a <strong>Python</strong> signal processing pipeline using <strong>Kalman filtering</strong> to extract cadence and foot progression angle from raw accelerometer and gyroscope data.</li>
+                            <li data-en="Applied &lt;strong&gt;time-frequency domain analysis&lt;/strong&gt; to compute jump height and other dynamic metrics; built a &lt;strong&gt;MATLAB&lt;/strong&gt; preprocessing pipeline for gait cycle segmentation using the &lt;strong&gt;biomechZoo&lt;/strong&gt; toolbox." data-zh="运用&lt;strong&gt;时频域分析&lt;/strong&gt;计算跳跃高度等动力学指标；使用 &lt;strong&gt;MATLAB&lt;/strong&gt; 与 &lt;strong&gt;biomechZoo&lt;/strong&gt; 工具箱构建步态周期分割预处理管线。">Applied <strong>time-frequency domain analysis</strong> to compute jump height and other dynamic metrics; built a <strong>MATLAB</strong> preprocessing pipeline for gait cycle segmentation using the <strong>biomechZoo</strong> toolbox.</li>
+                            <li data-en="Validated algorithms against reference models using &lt;strong&gt;RMSE&lt;/strong&gt; and waveform correlation metrics; extended the &lt;strong&gt;biomechZoo&lt;/strong&gt; open-source codebase and authored public-facing documentation." data-zh="利用 &lt;strong&gt;RMSE&lt;/strong&gt; 与波形相关性指标对算法进行验证；扩展 &lt;strong&gt;biomechZoo&lt;/strong&gt; 开源代码库并撰写面向大众的使用文档。">Validated algorithms against reference models using <strong>RMSE</strong> and waveform correlation metrics; extended the <strong>biomechZoo</strong> open-source codebase and authored public-facing documentation.</li>
+                        </ul>
+                        <div class="experience-visuals">
+                            <p class="visuals-label" data-en="Project Visuals" data-zh="项目图示">Project Visuals</p>
+                            <div class="visuals-grid">
+                                <div class="gallery-item" onclick="openLightbox(this)">
+                                    <img src="assets/biomechzoo.png" alt="biomechZoo documentation" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <button class="lightbox-close" aria-label="Close">&times;</button>
+                <img class="lightbox-img" id="lightboxImg" src="" alt="" />
             </div>
-        </section>
 
         </main>
     </div>
-
-    <footer class="footer">
-        <p data-en="© <span id=&quot;year&quot;></span> Bax. Built with curiosity." data-zh="© <span id=&quot;year&quot;></span> Bax. 用好奇心打造。">© <span id="year"></span> Bax. Built with curiosity.</p>
-    </footer>
 
     <script src="scripts/main.js" defer></script>
 </body>
