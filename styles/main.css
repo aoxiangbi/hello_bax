@@ -542,11 +542,80 @@ a {
     border-bottom: 1px solid var(--border);
 }
 
+.project-card-img--nba {
+    background: linear-gradient(135deg, #1a0a0a 0%, #4a1208 45%, #c8102e 100%);
+}
+
+.project-card-img--star {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #f38507 100%);
+}
+
+.project-card-img--hrv {
+    background: linear-gradient(135deg, #0b1f17 0%, #14532d 55%, #22c55e 100%);
+}
+
 .project-card-img-label {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--text-muted);
+    color: #fff;
+    letter-spacing: 0.08em;
+    opacity: 0.92;
+}
+
+.project-card-tags {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
     letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/* Experience showcase link to live deliverable */
+.showcase-card {
+    display: block;
+    padding: 1.25rem 1.4rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(10, 132, 255, 0.28);
+    background: linear-gradient(145deg, rgba(10, 132, 255, 0.1), rgba(200, 16, 46, 0.08));
+    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.showcase-card:hover {
+    border-color: rgba(10, 132, 255, 0.55);
+    transform: translateY(-2px);
+    background: linear-gradient(145deg, rgba(10, 132, 255, 0.16), rgba(200, 16, 46, 0.12));
+}
+
+.showcase-card-badge {
+    display: inline-block;
+    margin-bottom: 0.55rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    background: #c8102e;
+}
+
+.showcase-card h4 {
+    margin: 0 0 0.45rem 0;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+}
+
+.showcase-card p {
+    margin: 0 0 0.85rem 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.showcase-card-cta {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
 }
 
 .project-card-body {

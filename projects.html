@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects - Bax Portfolio</title>
-    <meta name="description" content="My projects" />
+    <title>Projects — Aoxiang Bi</title>
+    <meta name="description" content="NBA AI sports projects by Aoxiang Bi" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,7 +12,6 @@
 </head>
 <body>
     <div class="layout-container">
-        <!-- Left sidebar with profile -->
         <aside class="profile-sidebar">
             <div class="profile-content">
                 <button class="lang-toggle" id="langToggle" aria-label="Toggle language">English</button>
@@ -21,12 +20,16 @@
                 </div>
                 <div class="profile-info">
                     <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
-                    <p class="profile-bio" data-en="3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab" data-zh="麦吉尔大学电子与计算机工程专业三年级 | 麦吉尔运动实验室可穿戴设备实习生">3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab</p>
+                    <p class="profile-bio" data-en="ECE @ McGill · NBA Ops Intern @ Hupu · Sports Science &amp; AI" data-zh="麦吉尔 ECE · 虎扑 NBA 赛事运营实习生 · 运动科学 &amp; AI">ECE @ McGill · NBA Ops Intern @ Hupu · Sports Science &amp; AI</p>
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">NBA</span>
+                    <span class="tag">AI</span>
+                    <span class="tag" data-en="Sports Tech" data-zh="体育科技">Sports Tech</span>
                 </div>
             </div>
         </aside>
 
-        <!-- Main content area -->
         <main class="main-content">
 
             <nav class="content-tabs">
@@ -39,25 +42,59 @@
                 <h2 data-en="My Projects" data-zh="我的项目">My Projects</h2>
                 <div class="projects-grid">
 
-                    <!-- JumPro -->
+                    <article class="project-card">
+                        <div class="project-card-img project-card-img--placeholder project-card-img--nba">
+                            <span class="project-card-img-label">NBA DATA</span>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-card-tags">AI · Data Viz · Hupu</p>
+                            <h3 data-en="NBA Data Center" data-zh="NBA 数据中心">NBA Data Center</h3>
+                            <p data-en="Multi-tool NBA hub covering lineup efficiency, playoff brackets, draft room, player/team H2H, and Hall of Fame — with feedback and one-tap post so fans discuss the numbers." data-zh="开发 NBA 数据中心多工具专题页，覆盖五人组效率、季后赛对阵、选秀室、球员交手与球队交锋、名人堂等；接入问题反馈与一键发帖，提升球迷参与度。">Multi-tool NBA hub covering lineup efficiency, playoff brackets, draft room, player/team H2H, and Hall of Fame — with feedback and one-tap post so fans discuss the numbers.</p>
+                            <a class="project-card-link" href="nba-data-center.html" data-en="Open live demo →" data-zh="打开在线演示 →">Open live demo →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card-img project-card-img--placeholder project-card-img--star">
+                            <span class="project-card-img-label">STAR HOUSE</span>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-card-tags">AI · CloudBase · Ads / Membership</p>
+                            <h3 data-en="Star House — Basketball Card Game" data-zh="球星屋 — 篮球球星卡游戏">Star House — Basketball Card Game</h3>
+                            <p data-en="Collectible basketball card game with onboarding, daily check-in, PvP + stage modes, steal/protect cards, timed live-player events, and ads/membership monetization tuned by instrumentation." data-zh="篮球球星卡游戏：开局组阵与新手教程、每日签到/限时补给、真实 PvP 与关卡挑战、偷卡/护卡机制；按球员实时表现发放限时卡，并用埋点把广告与会员嵌进核心玩法。">Collectible basketball card game with onboarding, daily check-in, PvP + stage modes, steal/protect cards, timed live-player events, and ads/membership monetization tuned by instrumentation.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card-img">
+                            <img src="assets/Site.png" alt="Sports science explainer site" />
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-card-tags">AI Agent · Next.js · GitHub</p>
+                            <h3 data-en="Sports Science Explainer Site" data-zh="运动科学科普网站">Sports Science Explainer Site</h3>
+                            <p data-en="End-to-end AI Agent pipeline: literature parse → copy generation → CI/CD deploy → Git push. Published explainers across player/team analysis, cardiovascular health, and neuroplasticity." data-zh="用 AI Agent 搭建「文献解析 → 文案生成 → CI/CD 自动部署 → Git 内容推送」全流程；上线多篇权威文献解读，覆盖球员/球队分析、心血管健康、神经可塑性等交叉领域。">End-to-end AI Agent pipeline: literature parse → copy generation → CI/CD deploy → Git push. Published explainers across player/team analysis, cardiovascular health, and neuroplasticity.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card-img project-card-img--placeholder project-card-img--hrv">
+                            <span class="project-card-img-label">HRV</span>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-card-tags">BSU · Generative AI · Dashboard</p>
+                            <h3 data-en="HRV Status Monitoring System" data-zh="HRV 状态检测系统">HRV Status Monitoring System</h3>
+                            <p data-en="With Beijing Sport University: HRV + wearable RRI data to assess sleep, training load, and recovery; extract RMSSD / SDNN / LF-HF / PSD and visualize on an interactive dashboard." data-zh="与北京体育大学合作：基于 HRV 算法与可穿戴 RRI 数据，评估睡眠、运动负荷与恢复；提取 RMSSD、SDNN、LF/HF、PSD 等指标，并开发交互式 Dashboard 实时可视化。">With Beijing Sport University: HRV + wearable RRI data to assess sleep, training load, and recovery; extract RMSSD / SDNN / LF-HF / PSD and visualize on an interactive dashboard.</p>
+                        </div>
+                    </article>
+
                     <article class="project-card">
                         <div class="project-card-img">
                             <img src="assets/JumPro.png" alt="JumPro" />
                         </div>
                         <div class="project-card-body">
-                            <h3 data-en="JumPro — IMU Vertical Jump Analyser" data-zh="JumPro — 基于 IMU 的垂直跳跃分析系统">JumPro — IMU Vertical Jump Analyser</h3>
-                            <p data-en="A Python-based system using wearable IMU sensors to measure vertical jump height, flight time, and landing impact in real time via signal processing and Kalman filtering." data-zh="基于 Python 的可穿戴 IMU 系统，通过信号处理与卡尔曼滤波实时测量垂直跳跃高度、腾空时间与落地冲击力。">A Python-based system using wearable IMU sensors to measure vertical jump height, flight time, and landing impact in real time via signal processing and Kalman filtering.</p>
-                        </div>
-                    </article>
-
-                    <!-- kins_site -->
-                    <article class="project-card">
-                        <div class="project-card-img">
-                            <img src="assets/Site.png" alt="kins_site" />
-                        </div>
-                        <div class="project-card-body">
-                            <h3 data-en="Sports Health &amp; Performance Web Platform" data-zh="运动健康与表现 Web 平台">Sports Health &amp; Performance Web Platform</h3>
-                            <p data-en="A full-stack web platform focused on sports health and athletic performance tracking, built with modern web technologies and deployed on GitHub." data-zh="一个专注于运动健康与竞技表现追踪的全栈 Web 平台，采用现代前端技术构建并部署于 GitHub。">A full-stack web platform focused on sports health and athletic performance tracking, built with modern web technologies and deployed on GitHub.</p>
+                            <p class="project-card-tags">IMU · Python · Sports Perf</p>
+                            <h3 data-en="JumPro — IMU Vertical Jump Analyser" data-zh="JumPro — 基于 IMU 的垂直跳跃分析">JumPro — IMU Vertical Jump Analyser</h3>
+                            <p data-en="Wearable IMU system measuring jump height, flight time, and landing impact in real time via signal processing and Kalman filtering." data-zh="基于可穿戴 IMU，通过信号处理与卡尔曼滤波实时测量垂直跳跃高度、腾空时间与落地冲击力。">Wearable IMU system measuring jump height, flight time, and landing impact in real time via signal processing and Kalman filtering.</p>
                         </div>
                     </article>
 
@@ -67,7 +104,6 @@
         </main>
     </div>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <button class="lightbox-close" aria-label="Close">&times;</button>
         <img class="lightbox-img" id="lightboxImg" src="" alt="" />

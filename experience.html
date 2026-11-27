@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Experience - Bax Portfolio</title>
-    <meta name="description" content="Professional experience" />
+    <title>Experience — Aoxiang Bi</title>
+    <meta name="description" content="NBA ops, AI sports products, and sports science experience" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,7 +12,6 @@
 </head>
 <body>
     <div class="layout-container">
-        <!-- Left sidebar with profile -->
         <aside class="profile-sidebar">
             <div class="profile-content">
                 <button class="lang-toggle" id="langToggle" aria-label="Toggle language">English</button>
@@ -21,12 +20,16 @@
                 </div>
                 <div class="profile-info">
                     <h1 class="profile-name" data-en="Hi, I'm Aoxiang Bi" data-zh="你好，我是毕翱翔">Hi, I'm Aoxiang Bi</h1>
-                    <p class="profile-bio" data-en="3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab" data-zh="麦吉尔大学电子与计算机工程专业三年级 | 麦吉尔运动实验室可穿戴设备实习生">3rd year Electrical &amp; Computer Engineering Student @ McGill University | Wearable Device Intern @ McGill Motion Lab</p>
+                    <p class="profile-bio" data-en="ECE @ McGill · NBA Ops Intern @ Hupu · Sports Science &amp; AI" data-zh="麦吉尔 ECE · 虎扑 NBA 赛事运营实习生 · 运动科学 &amp; AI">ECE @ McGill · NBA Ops Intern @ Hupu · Sports Science &amp; AI</p>
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">NBA</span>
+                    <span class="tag">AI</span>
+                    <span class="tag" data-en="Sports Tech" data-zh="体育科技">Sports Tech</span>
                 </div>
             </div>
         </aside>
 
-        <!-- Main content area -->
         <main class="main-content">
 
             <nav class="content-tabs">
@@ -42,19 +45,43 @@
                     <article class="experience-item">
                         <div class="experience-header">
                             <div>
-                                <h3 data-en="Wearable Device Engineer" data-zh="可穿戴设备工程师">Wearable Device Engineer</h3>
-                                <p class="experience-org" data-en="McGill Motion Technology &amp; Innovation (MOTION) Lab" data-zh="麦吉尔运动技术与创新（MOTION）实验室">McGill Motion Technology &amp; Innovation (MOTION) Lab</p>
+                                <h3 data-en="NBA Operations Intern" data-zh="NBA 赛事运营实习生">NBA Operations Intern</h3>
+                                <p class="experience-org" data-en="Hupu (虎扑)" data-zh="虎扑">Hupu (虎扑)</p>
                             </div>
-                            <p class="meta" data-en="Dec 2025 – Present" data-zh="2025 年 12 月 – 至今">Dec 2025 – Present</p>
+                            <p class="meta" data-en="Aug 2026 – Dec 2026" data-zh="2026 年 8 月 – 2026 年 12 月">Aug 2026 – Dec 2026</p>
                         </div>
                         <ul class="experience-bullets">
-                            <li data-en="Built a &lt;strong&gt;3D lower-limb gait kinematics pipeline&lt;/strong&gt; for wearable &lt;strong&gt;IMU&lt;/strong&gt; systems, computing hip, knee, ankle, and pelvis joint angles from raw sensor data." data-zh="为可穿戴 &lt;strong&gt;IMU&lt;/strong&gt; 系统构建&lt;strong&gt;三维下肢步态运动学管线&lt;/strong&gt;，计算髋、膝、踝及骨盆关节角度。">Built a <strong>3D lower-limb gait kinematics pipeline</strong> for wearable <strong>IMU</strong> systems, computing hip, knee, ankle, and pelvis joint angles from raw sensor data.</li>
-                            <li data-en="Developed a &lt;strong&gt;Python&lt;/strong&gt; signal processing pipeline using &lt;strong&gt;Kalman filtering&lt;/strong&gt; to extract cadence and foot progression angle from raw accelerometer and gyroscope data." data-zh="利用 &lt;strong&gt;Python&lt;/strong&gt; 构建基于&lt;strong&gt;卡尔曼滤波&lt;/strong&gt;的信号处理管线，从原始加速度计与陀螺仪数据中提取步频与足偏角。">Developed a <strong>Python</strong> signal processing pipeline using <strong>Kalman filtering</strong> to extract cadence and foot progression angle from raw accelerometer and gyroscope data.</li>
-                            <li data-en="Applied &lt;strong&gt;time-frequency domain analysis&lt;/strong&gt; to compute jump height and other dynamic metrics; built a &lt;strong&gt;MATLAB&lt;/strong&gt; preprocessing pipeline for gait cycle segmentation using the &lt;strong&gt;biomechZoo&lt;/strong&gt; toolbox." data-zh="运用&lt;strong&gt;时频域分析&lt;/strong&gt;计算跳跃高度等动力学指标；使用 &lt;strong&gt;MATLAB&lt;/strong&gt; 与 &lt;strong&gt;biomechZoo&lt;/strong&gt; 工具箱构建步态周期分割预处理管线。">Applied <strong>time-frequency domain analysis</strong> to compute jump height and other dynamic metrics; built a <strong>MATLAB</strong> preprocessing pipeline for gait cycle segmentation using the <strong>biomechZoo</strong> toolbox.</li>
-                            <li data-en="Validated algorithms against reference models using &lt;strong&gt;RMSE&lt;/strong&gt; and waveform correlation metrics; extended the &lt;strong&gt;biomechZoo&lt;/strong&gt; open-source codebase and authored public-facing documentation." data-zh="利用 &lt;strong&gt;RMSE&lt;/strong&gt; 与波形相关性指标对算法进行验证；扩展 &lt;strong&gt;biomechZoo&lt;/strong&gt; 开源代码库并撰写面向大众的使用文档。">Validated algorithms against reference models using <strong>RMSE</strong> and waveform correlation metrics; extended the <strong>biomechZoo</strong> open-source codebase and authored public-facing documentation.</li>
+                            <li data-en="Owned day-to-day tracking of games, star news, trades &amp; injuries; orchestrated homepage slots and Push so high-value updates reached fans in seconds." data-zh="负责日常比赛、球星动态及交易/伤病等突发事件的实时追踪，统筹首页资源位调度与 Push 推送，保障高价值信息的秒级触达。">Owned day-to-day tracking of games, star news, trades &amp; injuries; orchestrated homepage slots and Push so high-value updates reached fans in seconds.</li>
+                            <li data-en="Wrote deep hotspot articles and creator jump-ins around marquee games, trade windows, and viral moments — pacing community discussion and driving breakout reach." data-zh="围绕焦点比赛日、交易窗口及舆论爆点撰写深度热点长文和创作者跳转，精准把控社区和球迷讨论节奏，助推内容破圈传播。">Wrote deep hotspot articles and creator jump-ins around marquee games, trade windows, and viral moments — pacing community discussion and driving breakout reach.</li>
+                            <li data-en="Led the multi-dimensional <strong>NBA Data Center</strong> (players / teams / draft and more), connecting player profiles, historical honors, and advanced stats to raise retrieval efficiency and dwell time." data-zh="主导建设 <strong>NBA 数据中心</strong> 多维度页面专题（球员/球队/选秀等），打通球员档案、历史荣誉与高阶赛事数据展示链路，显著提升核心球迷的数据检索效率与页面停留时长。">Led the multi-dimensional <strong>NBA Data Center</strong> (players / teams / draft and more), connecting player profiles, historical honors, and advanced stats to raise retrieval efficiency and dwell time.</li>
+                            <li data-en="Led core game <strong>Star House (球星屋)</strong> from build to monetization: daily UV 20–30k (peak 60k+), 550k monthly visits, 364k new users; avg 4.55 visits/user/day; peak daily revenue ~¥10k; 75k ad-triggered users at 17.99% conversion." data-zh="主导核心游戏「<strong>球星屋</strong>」的开发、排期推进与商业化落地：日均 UV 2–3 万（峰值超 6 万），单月累计访问 55 万、拉新 36.4 万；日均人均访问 4.55 次，单日峰值营收近 1 万元；广告触发用户 7.5 万，转化率 17.99%。">Led core game <strong>Star House (球星屋)</strong> from build to monetization: daily UV 20–30k (peak 60k+), 550k monthly visits, 364k new users; avg 4.55 visits/user/day; peak daily revenue ~¥10k; 75k ad-triggered users at 17.99% conversion.</li>
+                        </ul>
+
+                        <div class="experience-visuals">
+                            <p class="visuals-label" data-en="Featured Deliverable — NBA Data Center" data-zh="代表作品 — NBA 数据中心">Featured Deliverable — NBA Data Center</p>
+                            <a class="showcase-card" href="nba-data-center.html">
+                                <div class="showcase-card-badge">LIVE DEMO</div>
+                                <h4 data-en="NBA Data Center" data-zh="NBA 综合数据中心">NBA Data Center</h4>
+                                <p data-en="Interactive multi-tool hub: draft room, player/team H2H, lineup efficiency, playoff brackets, Hall of Fame, honors &amp; more — built for Hupu fans to search, compare, and discuss." data-zh="交互式多工具专题：选秀室、球员/球队交手、五人组效率、季后赛对阵、名人堂、荣誉奖项等，把碎片化赛事数据做成可检索、可对比的球迷产品。">Interactive multi-tool hub: draft room, player/team H2H, lineup efficiency, playoff brackets, Hall of Fame, honors &amp; more — built for Hupu fans to search, compare, and discuss.</p>
+                                <span class="showcase-card-cta" data-en="Open the full page →" data-zh="打开完整页面 →">Open the full page →</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 data-en="Sports Performance &amp; Biomechanics Research Assistant" data-zh="运动表现与生物力学研究助理">Sports Performance &amp; Biomechanics Research Assistant</h3>
+                                <p class="experience-org" data-en="McGill MOTION Lab &amp; Zhejiang University Sports Engineering" data-zh="麦吉尔大学 MOTION 实验室 &amp; 浙江大学体育工程学院">McGill MOTION Lab &amp; Zhejiang University Sports Engineering</p>
+                            </div>
+                            <p class="meta" data-en="Aug 2025 – Present" data-zh="2025 年 8 月 – 至今">Aug 2025 – Present</p>
+                        </div>
+                        <ul class="experience-bullets">
+                            <li data-en="Used Python signal processing and ML to extract jump height, cadence, landing impact and other performance / kinetic metrics from multi-sensor streams." data-zh="利用 Python 信号处理与机器学习算法，从多传感器数据中提取跳跃高度、步频、落地冲击力等核心体能与动力学指标。">Used Python signal processing and ML to extract jump height, cadence, landing impact and other performance / kinetic metrics from multi-sensor streams.</li>
+                            <li data-en="Studied human kinematics and lower-limb joint loading to inform player training / injury explainers, combine testing reads, and post-game load analysis." data-zh="深入研究人体运动学与下肢关节负荷机制，为球员训练/伤病等深度科普、新秀体测数据及赛后体能分析提供运动科学视角。">Studied human kinematics and lower-limb joint loading to inform player training / injury explainers, combine testing reads, and post-game load analysis.</li>
                         </ul>
                         <div class="experience-visuals">
-                            <p class="visuals-label" data-en="Project Visuals" data-zh="项目图示">Project Visuals</p>
+                            <p class="visuals-label" data-en="Lab Visuals" data-zh="实验室图示">Lab Visuals</p>
                             <div class="visuals-grid">
                                 <div class="gallery-item" onclick="openLightbox(this)">
                                     <img src="assets/biomechzoo.png" alt="biomechZoo documentation" />
@@ -63,10 +90,22 @@
                         </div>
                     </article>
 
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 data-en="Education" data-zh="教育经历">Education</h3>
+                                <p class="experience-org" data-en="McGill University — Electrical &amp; Computer Engineering" data-zh="麦吉尔大学 — 电子与计算机工程">McGill University — Electrical &amp; Computer Engineering</p>
+                            </div>
+                            <p class="meta" data-en="Sep 2023 – May 2028" data-zh="2023 年 9 月 – 2028 年 5 月">Sep 2023 – May 2028</p>
+                        </div>
+                        <ul class="experience-bullets">
+                            <li data-en="GPA 3.7/4.0 · IELTS 7.0 — fluent with top overseas sports media (ESPN, The Athletic, Shams) and fast Chinese compile capability." data-zh="专业成绩 3.7/4.0；雅思 7.0，具备无障碍阅读 ESPN、The Athletic、Shams 等海外一线体育媒体及快速编译能力。">GPA 3.7/4.0 · IELTS 7.0 — fluent with top overseas sports media (ESPN, The Athletic, Shams) and fast Chinese compile capability.</li>
+                        </ul>
+                    </article>
+
                 </div>
             </section>
 
-            <!-- Lightbox -->
             <div class="lightbox" id="lightbox" onclick="closeLightbox()">
                 <button class="lightbox-close" aria-label="Close">&times;</button>
                 <img class="lightbox-img" id="lightboxImg" src="" alt="" />
