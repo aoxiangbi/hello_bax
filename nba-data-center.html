@@ -3185,7 +3185,7 @@
   }
   (function () {
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26811-r8hvasrc-upload-1786413894934-14.js';
+    s.src = 'nba-assets/26811-r8hvasrc-upload-1786413894934-14.js';
     s.onload = function () { window.__draftDataReady = true; __checkDataReady(); };
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3197,7 +3197,7 @@
   })();
   (function () {
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26831-dxx718rc-upload-1788151476188-15.js';
+    s.src = 'nba-assets/26831-dxx718rc-upload-1788151476188-15.js';
     s.onload = function () { window.__namesReady = true; __checkDataReady(); };
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3245,7 +3245,7 @@
       }
     }
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26831-vrj3hhrc-upload-1788151476188-18.js';
+    s.src = 'nba-assets/26831-vrj3hhrc-upload-1788151476188-18.js';
     s.onload = function () { bridge(); done(); };
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3263,7 +3263,7 @@
       __checkDataReady();
     };
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26728-sydrlnrc-upload-1785139363353-71.js';
+    s.src = 'nba-assets/26728-sydrlnrc-upload-1785139363353-71.js';
     s.onload = done;
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3277,7 +3277,7 @@
   (function () {
     var done = function () { window.__logosReady = true; __checkDataReady(); };
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26727-97wgabrc-upload-1785137275634-12.js';
+    s.src = 'nba-assets/26727-97wgabrc-upload-1785137275634-12.js';
     s.onload = done;
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3292,7 +3292,7 @@
   (function () {
     var done = function () { window.__prospectPhotosReady = true; __checkDataReady(); };
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26820-tl0cworc-upload-1787221968606-12.js';
+    s.src = 'nba-assets/26820-tl0cworc-upload-1787221968606-12.js';
     s.onload = done;
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3307,7 +3307,7 @@
   (function () {
     var done = function () { window.__teamAssetsReady = true; __checkDataReady(); };
     var s = document.createElement('script');
-    s.src = 'https://activity-static.hoopchina.com.cn/files/26820-wmwnr8rc-upload-1787073033622-36.js';
+    s.src = 'nba-assets/26820-wmwnr8rc-upload-1787073033622-36.js';
     s.onload = done;
     s.onerror = function () {
       var l = document.createElement('script');
@@ -3320,11 +3320,11 @@
   })();
 </script>
 <!-- 球队/球员交手数据：改用静态 script src（与对位索引相同），宿主页可加载；动态 createElement 在马贴环境常被拦截 -->
-<script src="https://activity-static.hoopchina.com.cn/files/26811-cuy344rc-upload-1786413894934-16.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/26820-pqxtb8rc-upload-1787217904164-14.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/26820-oj3h7hrc-upload-1787217904164-26.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/26820-j6rlparc-upload-1787217904164-32.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/26820-82kdyorc-upload-1787217904164-37.js"></script>
+<script src="nba-assets/26811-cuy344rc-upload-1786413894934-16.js"></script>
+<script src="nba-assets/26820-pqxtb8rc-upload-1787217904164-14.js"></script>
+<script src="nba-assets/26820-oj3h7hrc-upload-1787217904164-26.js"></script>
+<script src="nba-assets/26820-j6rlparc-upload-1787217904164-32.js"></script>
+<script src="nba-assets/26820-82kdyorc-upload-1787217904164-37.js"></script>
 <script>
   window.__versusReady = true;
   window.__h2hDetailReady = true;
@@ -3336,9 +3336,9 @@
 
 
 <!-- 球员对位数据索引（小文件，立即加载） -->
-<script src="https://activity-static.hoopchina.com.cn/files/26830-15j6rirc-upload-1788092518415-38.js"></script>
+<script src="nba-assets/26830-15j6rirc-upload-1788092518415-38.js"></script>
 <!-- 球员中文译名映射 -->
-<script src="https://activity-static.hoopchina.com.cn/files/26830-9vg9bgrc-upload-1788092518415-27.js"></script>
+<script src="nba-assets/26830-9vg9bgrc-upload-1788092518415-27.js"></script>
 <!--
   [单文件约束] 原先这里还会加载本地 matchup-cn.js，但该文件不随 stats.html 提供。
   保留这条历史依赖的说明，不再执行本地脚本，避免 file:// 页面产生 ERR_FILE_NOT_FOUND。
@@ -7766,13 +7766,8 @@ function renderMatchupSummary() {
   window.safeNavigate = safeNavigate;
 
   function wowyGetOssClient() {
-    if (_ossClient) return _ossClient;
-    var K = window.KaleidoOSS || null;
-    if (K) {
-      _ossClient = new K({ appId: 'b1AcxWKA1u0hyDYv5kXgImZBRSQ=', module: 'activity-screenshot-fed', path: '/screenshot/activity/fed', sk: 'HioGpkmGe9bsW0iqRLJEyGoLr4Q=', action: '1' });
-      if (typeof _ossClient.start === 'function') _ossClient.start();
-    }
-    return _ossClient;
+    // Portfolio build: no client-side OSS credentials. Uploads require a signed-URL server flow.
+    return null;
   }
 
   function wowyDataURLToBlob(dataURL) {
@@ -9669,10 +9664,10 @@ var posRankActiveTab = '后卫';
 })();
 </script>
 
-<script src="https://activity-static.hoopchina.com.cn/files/26627-aygb49rc-upload-1782541886041-15.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/2692-8g000drc-upload-1788330828858-14.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/2692-wg25darc-upload-1788340036963-12.js"></script>
-<script src="https://activity-static.hoopchina.com.cn/files/26818-ypw91trc-upload-1787018309272-12.js"></script>
+<script src="nba-assets/26627-aygb49rc-upload-1782541886041-15.js"></script>
+<script src="nba-assets/2692-8g000drc-upload-1788330828858-14.js"></script>
+<script src="nba-assets/2692-wg25darc-upload-1788340036963-12.js"></script>
+<script src="nba-assets/26818-ypw91trc-upload-1787018309272-12.js"></script>
 <script>
 /* 球员卡「分享」：截图整张球员卡 → 上传 OSS → 跳转到 NBA数据分享 话题发帖编辑器
    参考 guess-1.html「分享我的成绩」与 WOWY「一键发帖」流程；话题固定为
@@ -9694,13 +9689,8 @@ var posRankActiveTab = '后卫';
     return new Blob([ab],{type:mime});
   }
   function cardGetOssClient(){
-    if(SHARE_OSS)return SHARE_OSS;
-    var K=window.KaleidoOSS||null;
-    if(K){
-      SHARE_OSS=new K({appId:'b1AcxWKA1u0hyDYv5kXgImZBRSQ=',module:'activity-screenshot-fed',path:'/screenshot/activity/fed',sk:'HioGpkmGe9bsW0iqRLJEyGoLr4Q=',action:'1'});
-      if(typeof SHARE_OSS.start==='function')SHARE_OSS.start();
-    }
-    return SHARE_OSS;
+    // Portfolio build: no client-side OSS credentials. Uploads require a signed-URL server flow.
+    return null;
   }
   function cardUploadToOSS(file,filename){
     return new Promise(function(resolve,reject){
@@ -10975,18 +10965,9 @@ function openSeriesModal(season, sidx){
 var __boxLoaded={};
 function loadBoxscores(season, cb){
   cb=cb||function(){};
-  var y=parseInt(season,10);
-  // 白名单校验：仅允许 2000-2026 的合法赛季，防止路径遍历/加载非预期资源
-  if(!(y>=2000&&y<=2026)){ cb(); return; }
-  var sKey=String(y);
-  if(window.PLAYOFF_BOXSCORES&&window.PLAYOFF_BOXSCORES[sKey]){ cb(); return; }
-  if(__boxLoaded[sKey]){ cb(); return; }
-  __boxLoaded[sKey]=true;
-  var s=document.createElement('script');
-  s.src='https://ai-1786417123438-d2eeedk94959a82-1252166086.ap-shanghai.app.tcloudbase.com/api/boxscores?year='+sKey;
-  s.onload=function(){ cb(); };
-  s.onerror=function(){ __boxLoaded[sKey]=false; cb(); };
-  document.head.appendChild(s);
+  // Portfolio build: do not inject remote cloud-function scripts into the page.
+  // Box score detail stays unavailable unless data is already embedded.
+  cb();
 }
 
 function renderGameStats(season, gameId, container){
